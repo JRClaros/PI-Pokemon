@@ -1,0 +1,10 @@
+@font-face {
+    font-family: roboto;
+    src: url('../fonts/roboto-v20-latin-regular.woff2');
+}
+
+.loading{
+  
+    margin:auto;
+    display:block;
+}

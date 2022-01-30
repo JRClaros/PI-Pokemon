@@ -1,0 +1,201 @@
+@font-face {
+    font-family: roboto;
+    src: url('../fonts/roboto-v20-latin-regular.woff2');
+}
+
+.HomeGlobal {
+    /* background-image: url('../img/home.gif'); */
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background-size:cover;
+    font-family: roboto;
+    display:flex;
+    flex-direction: column;
+    align-content:center;
+    align-items: center;
+}
+.Nav{
+    background-color: #000D6B;
+    display:flex;
+    height:11%;
+    width: 100%;
+    text-decoration: none;
+    position:absolute;
+}
+.HomeLogo{
+    width:100%;
+    height:100%;
+    position:absolute;
+    right: 570px;
+    top: 0%;
+}
+/* -Menú- */
+.NavMenu .HomeMenu {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.NavMenu {
+    display:inline-flex;
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid #0099ffe1;
+    padding: 3px;
+    transition: 0.5s;
+    border-radius: 90px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+    right:15px;
+    top:10px;
+}
+.div .HomeMenu {
+    padding: 0;
+}
+.HomeMenu {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.NavMenu input:checked ~ .HomeMenu {
+    width: 630px;
+}
+.HomeMenu li {
+    list-style: none;
+    display:flex;
+    justify-content:center;
+    
+}
+.HomeMenu li select {
+    text-decoration: none;
+    color: #666;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.5s; 
+    border-radius:10px;
+    display: inline-block;
+    margin-top: 0;
+}
+.HomeMenu li select:hover{
+    color: #161919;   
+}
+.NavMenu input {
+    align-items: center;
+    width: 40px;  
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+} 
+ .NavMenu span {
+    position: absolute;
+    left: 13px;
+    width: 30px;
+    height: 4px;
+    border-radius: 90px;
+    background-color: #FEE440;
+    pointer-events: none;
+    transition: 0.5s;
+    bottom: 22px;
+}  
+ .NavMenu input:checked ~ span {
+    background-color: #FFE300;
+}
+.NavMenu span:nth-child(2){
+    transform: translateY(-8px);
+}
+.NavMenu input:checked ~ span:nth-child(2) {
+    transform: translateY(0) rotate(-45deg);
+}
+.NavMenu span:nth-child(3){
+    transform: translateY(8px);
+}
+.NavMenu input:checked ~ span:nth-child(3){
+     transform: translateY(0) rotate(45deg);
+} 
+
+/*-Crear Button -*/
+
+.HomeCrear {
+    width: 80px;
+    display:flex;
+    position: absolute;
+    left: 300px;
+    top: 20px;
+}
+
+.HomeCrear button{
+    display:flex;
+    justify-content:center;
+    vertical-align: center;
+    position: absolute;
+    background-color: #ffbb00;
+    border-radius: 90px;
+    font-family: roboto;
+    font-size: 20px;
+    font-weight:900;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #000D6B;
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    cursor:pointer;
+    user-select:none;
+    transition-duration: 0.4s;
+    right:0px;
+    border-color: #0099ffe1;
+}
+
+.HomeCrear button:hover{
+    transition-duration: 0.5s;
+    background-color: #ff2600;
+    color:aliceblue;
+    border-color: aliceblue;
+}
+.HomeCrear button:after{
+    content: "";
+    display: flex;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.6s;
+    box-shadow: 0 0 10px 40px white;
+    justify-content:center;
+    text-align: center;
+}
+.HomeCrear button:active:after {
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    display:flex;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    opacity: 1;
+    transition: 4s;
+}
+.HomeCrear button:active {
+    top: 2px;
+}
+/* -Card Container- */
+
+.CardGlobal {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 92%;
+    justify-content:space-evenly;
+    align-content:space-evenly;
+    text-decoration: none; 
+    margin: 60px;
+}
+  /* -Paginado- */
+  .Paginado{
+    list-style: none;
+  }

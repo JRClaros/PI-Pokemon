@@ -1,0 +1,54 @@
+.Container {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+    list-style: none;
+    position: absolute;
+}
+.Container ul{
+    width: auto;
+    height: auto;
+}
+.Container ul li{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: 0 5px 0 0;
+    border: 0;
+    list-style: none;
+}
+.Container ul li:last-child {
+    margin:0;
+}
+.Container ul li button {
+    width: 100%;
+    height: 30px;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #2E2929;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color .25s ease-in-out;
+}
+.Container ul li button:hover {
+    background-color: hsl(34, 80%, 49%);
+    color: #FFF;  
+}
+.Container ul li button:checked{
+    transition: transform .7s ease-in-out;
+    transform: translateY(0px);
+    background-color: hsl(34, 80%, 49%);
+    color: #FFF;
+}

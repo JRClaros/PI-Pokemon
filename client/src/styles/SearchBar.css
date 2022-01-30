@@ -1,0 +1,86 @@
+@font-face {
+    font-family: roboto;
+    src: url('../fonts/roboto-v20-latin-regular.woff2');
+}
+
+.HomeButton {
+    display:flex;
+    margin:14px;
+}
+.HomeButton img {
+    /* background-image: url('../img/pokemonLogo.png') no-repeat; */
+    width:20%;
+    height: 87%;
+    display:flex;
+    position:absolute;
+    left:0px;
+    top:4px;
+}
+/* .HomeButton img:hover {
+    cursor:pointer;
+} */
+.searchBox {
+    margin: 5px 5px;
+    position: absolute;
+    height: 90px;
+    float: right;
+    padding: 0;
+    right: 730px;
+    display:flex;
+}
+ .searchInput{
+    height: 27px;
+    font-size: 12px;
+    display: inline-block;
+    font-family: roboto;
+    border: 2px solid;
+    border-radius: 90px;
+    outline: none;
+    border-color: #0099ffe1;
+    color: #ffbb00;
+    padding: 3px;
+    padding-right: 60px;
+    width: 0px;
+    top: 0;
+    right: 0px;
+    background: none;
+    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+    cursor: pointer;
+    position:absolute;
+    z-index: 2;
+} 
+.searchInput:focus:hover{
+    border-bottom: 1px solid #f4f2f5;
+}
+.searchInput:focus{
+    width: 100px;
+    border-bottom: 1px solid #ffbb00;
+    cursor: text;
+    z-index:1;
+} 
+
+.searchButton button img {
+    width: 30px;
+    height: 30px;
+    left: -13px;
+    top:2px;
+    opacity: .4s ease;
+    display:inline-flex;
+    position: absolute;
+    z-index: 3;
+}
+.searchButton button {
+    background-color:transparent;
+    border-radius: 90px;
+    width:50%;
+    height:50%;
+    left: 8px;
+    top: 0px;
+    display:flex;
+    align-content: center;
+    border:none
+}
+.searchButton button img:hover{
+    cursor:pointer;
+}
+ 
