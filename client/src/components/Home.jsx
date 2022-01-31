@@ -14,15 +14,17 @@ export default function Home(){
     const dispatch = useDispatch();
     const allPokemons = useSelector((state) => state.pokemons);
     const allTypes = useSelector((state) => state.types);
-
+    // const [isLoading, setIsLoading] = useState(true);
     const [currentPage, setCurrentPage] = useState(1);
+    // eslint-disable-next-line no-unused-vars
     const [pokemonsPerPage, setPokemonsPerPage] = useState(12);
     const lastPokemon = currentPage * pokemonsPerPage;
     const firstPokemon = lastPokemon - pokemonsPerPage;
     const currentPokemons= allPokemons.slice(firstPokemon,lastPokemon);
     const pokeFirstPag = allPokemons.slice(firstPokemon, lastPokemon)
-
+    // eslint-disable-next-line no-unused-vars
     const [orderByName, setOrderByName] = useState('');
+    // eslint-disable-next-line no-unused-vars
     const [orderAttack, setOrderAttack] = useState('');
 
     const paginado = (pageNumber) =>{

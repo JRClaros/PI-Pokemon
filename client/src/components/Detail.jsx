@@ -13,6 +13,7 @@ function DetailPokemon(props){
 
     useEffect(()=>{
         dispatch(getDetailPokemon(params.id))
+    // eslint-disable-next-line react-hooks/exhaustive-deps    
     },[dispatch]);
     
     return(

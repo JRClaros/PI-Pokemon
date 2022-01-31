@@ -75,7 +75,7 @@ export default function PokemonCreate(){
         weight :0,
         types  :[],
     })
-
+     // eslint-disable-next-line no-unused-vars
     const [inputPokeCopy, setInputPokeCopy] = useState({...inputPokemon})
 
     const handleChangeInput = (e) =>{
@@ -161,6 +161,7 @@ export default function PokemonCreate(){
       }
     useEffect(() => {
         dispatch(getType())
+        // eslint-disable-next-line react-hooks/exhaustive-deps
    }, [])
 
    return (

@@ -19,7 +19,6 @@ export default function SearchBar(){
         e.preventDefault();
         dispatch(Search_Name(namePokemon.toLowerCase()))
         setNamePokemon('')
-        
     }
     return (
         <div className='searchBox'>
