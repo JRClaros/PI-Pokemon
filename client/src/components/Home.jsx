@@ -124,7 +124,7 @@ export default function Home(){
                      allPokemons.length === 0? <Loading/>:
                      filterPokemonsPag()?.map(p =>{
                             return(     
-                                        <Card  key={p.id } id={p.id} name= {p.name} image= {p.image} type= {p.types + '  '}/>
+                                        <Card  key={p.id } id={p.id} name= {p.name} image= {p.image} type= {p.types + '  '} attack={p.attack}/>
                             )
                         })
                 }

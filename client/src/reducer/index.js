@@ -59,13 +59,9 @@ export default function rootReducer(state = initialState, action){
 
         case 'ORDER_BY_ATTACK':
             let orderAttack = action.payload === 'fMax' ? state.pokemons.sort(function(a,b){
-                if(a.attack > b.attack) return 1;
-                if(b.attack > a.attack) return -1;
-                return 0;
+                return (b.attack - a.attack)
             }): state.pokemons.sort(function(a,b){
-                if(a.attack > b.attack) return -1;
-                if(b.attack > a.attack) return 1;
-                return 0;
+                return (a.attack - b.attack)
             })
 
             return{

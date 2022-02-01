@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import '../styles/Card.css';
 import imgNotFound from '../img/NotFound.gif';
 
-export default function Card({name,image,type,id}){
+export default function Card({name,image,type,id,attack}){
     if (image){
     return(
             <Link className='card' to = {'/pokemons/' + id}>
@@ -11,7 +11,8 @@ export default function Card({name,image,type,id}){
                     <img src={image} alt="not found"/>
                 </div>
                 <div className='content'>
-                    <h5>{name}</h5>
+                    <h4>{name}</h4>
+                    {/* <h5>Fuerza: {attack}</h5> */}
                     <h6>{type}</h6>
                 </div>
             </Link>
